@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_a_todo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/todo_item"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/add_item"
+        android:hint="@string/add_hint"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintColor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/todo_item"
+        android:layout_marginTop="40dp"
+        android:text="@string/save"
+        android:textSize="24sp"
+        android:layout_alignEnd="@+id/todo_item"/>
+
+</RelativeLayout>

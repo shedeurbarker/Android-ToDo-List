@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">To-Do</string>
+    <string name="add_a_todo">Add a ToDo Item</string>
+    <string name="title">My To-Do List</string>
+    <string name="add_hint">Add an item to your list</string>
+    <string name="save">Save</string>
+</resources>
